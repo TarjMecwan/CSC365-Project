@@ -19,7 +19,7 @@ In this course, our team is tasked with the challenge of designing and implement
 
 ### Project Description
 
-Add this in lab
+We are creating an e-commerce platform where users can buy and sell shoes. Users create an account with an email and password where passwords are encrypted in our database. Users can create a new listing and upload images for each item. Users can search for which items they want to buy and filter by shoe size, brand, price, username, and date uploaded.
 
 ### Getting Started
 
