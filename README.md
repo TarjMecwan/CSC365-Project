@@ -13,7 +13,7 @@ In this course, our team is tasked with the challenge of designing and implement
 ### Team Members
 
 - Member 1: Tarj Mecwan - tmecwan@calpoly.edu
-- Member 2: Bryce Raymundo - [Cal Poly Email]
+- Member 2: Bryce Raymundo - brraymun@calpoly.edu
 - Member 3: Melissa Chow - mchow14@calpoly.edu
 - Member 4: Adi G. - agottumu@calpoly.edu
 
