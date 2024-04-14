@@ -9,7 +9,10 @@ User stories describe the interactions and goals of the users within the ShoeMar
 1. As a sneaker enthusiast, I want to filter shoe listings by size, so that I can quickly find shoes that fit me.
 2. As a collector, I want to filter by brand and release date, so that I can find specific collectible shoes.
 3. As a bargain hunter, I want to sort listings by price, so that I can find the best deals available.
-
+4. As a runner, I want to be able to easily find good running shoes, so that I can buy the best shoes for running.
+5. As a seller, I want to be able to easily list shoes that I have for sale, so that I can reach customers to make money selling shoes.
+6. As a student, I want to see what other kinds of shoes people are buying, so I can see what kinds of styles are popular.
+ 
 ## Exceptions
 
 Exceptions detail the error scenarios we anticipate and how the system is designed to handle them to maintain usability and user satisfaction.
@@ -20,3 +23,9 @@ Exceptions detail the error scenarios we anticipate and how the system is design
  - The listing will be automatically removed or updated, and users who have shown interest will be notified.
 3. Exception: User attempts to register with an already used email.
  - The system will inform the user that the email is already in use and suggest they log in or reset their password.
+4. Exception: A listed item that is not good for running but is listed as a good running shoe.
+   - The system will have a review system so users can see how good a certain shoe is for a certain task.
+5. Exception: Two users have the same item in their cart and try to checkout.
+  - The system will check to be sure an item is available even if the item is already in a user's cart.
+6. Exception: A user makes multiple failed login attempts within a few minutes.
+- The system will make the user wait before trying again and notify the email attached to that account about the multiple login attempts.
