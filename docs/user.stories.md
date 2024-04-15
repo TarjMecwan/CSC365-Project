@@ -12,6 +12,9 @@ User stories describe the interactions and goals of the users within the ShoeMar
 4. As a runner, I want to be able to easily find good running shoes, so that I can buy the best shoes for running.
 5. As a seller, I want to be able to easily list shoes that I have for sale, so that I can reach customers to make money selling shoes.
 6. As a student, I want to see what other kinds of shoes people are buying, so I can see what kinds of styles are popular.
+7. As a reseller, I want to see how the shoe market is fluctuating.
+8. As a parent, I want to know what shoes are the most popular to buy for my kids.
+9. As somebody in a relationship, I want to see what shoes I can get my partner, and pick out the best colorways. 
  
 ## Exceptions
 
@@ -24,8 +27,14 @@ Exceptions detail the error scenarios we anticipate and how the system is design
 3. Exception: User attempts to register with an already used email.
  - The system will inform the user that the email is already in use and suggest they log in or reset their password.
 4. Exception: A listed item that is not good for running but is listed as a good running shoe.
-   - The system will have a review system so users can see how good a certain shoe is for a certain task.
+  - The system will have a review system so users can see how good a certain shoe is for a certain task.
 5. Exception: Two users have the same item in their cart and try to checkout.
   - The system will check to be sure an item is available even if the item is already in a user's cart.
 6. Exception: A user makes multiple failed login attempts within a few minutes.
 - The system will make the user wait before trying again and notify the email attached to that account about the multiple login attempts.
+7. Exception: A user intends to make a search but they spell it wrong
+  - The system will yield results for products that are similar to user input
+8. Exception : A user's payment does not go through or has pending status. 
+  - The system will notify the user, so that they do not make the same payment twice. 
+9. Exception: User enters invalid data format in a form field (e.g., entering letters in a numerical field).
+The system will display an error message highlighting the specific field(s) with invalid input and provide guidance on the expected format, enabling the user to correct the information and proceed with the form submission.
