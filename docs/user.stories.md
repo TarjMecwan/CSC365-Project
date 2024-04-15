@@ -15,6 +15,9 @@ User stories describe the interactions and goals of the users within the ShoeMar
 7. As a reseller, I want to see how the shoe market is fluctuating.
 8. As a parent, I want to know what shoes are the most popular to buy for my kids.
 9. As somebody in a relationship, I want to see what shoes I can get my partner, and pick out the best colorways. 
+10. As a Hiker, I want to see what shoes are good for hiking, and pick out the best hiking shoes.
+11. As a reseller, I want to see the average prices for the shoe I'm looking to sell, and sell at an optimal price.
+12. As a Female, I want to see shoes that are made for me, and buy shoes that are for woman.
  
 ## Exceptions
 
@@ -38,3 +41,9 @@ Exceptions detail the error scenarios we anticipate and how the system is design
   - The system will notify the user, so that they do not make the same payment twice. 
 9. Exception: User enters invalid data format in a form field (e.g., entering letters in a numerical field).
 The system will display an error message highlighting the specific field(s) with invalid input and provide guidance on the expected format, enabling the user to correct the information and proceed with the form submission.
+10. Expection: A user posts a shoe that is not on the catalog
+ - The system will allow the user to add their shoe as a new model.
+11. Exception: The user tries to sell a shoe at a negative price
+   - The system will force the user to sell the shoe inside a proper range.
+12. Exception: A user spam posts the same shoe listing multiple times.
+  - The system will notify the user and will only allow one posting for each entry of shoe in the catalog.
