@@ -163,7 +163,7 @@ Used for seller to create a seller portfolio once account is crated.
 }
 ```
 
-### 3.3. Get Portfolio Items - `/portfolio/get_items` (POST)
+### 3.3. Get Portfolio Items - `/portfolio/get_items` (GET)
 Used for seller to display current listings
 
 **Query Parameters**:
