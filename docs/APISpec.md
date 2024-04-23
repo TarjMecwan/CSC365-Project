@@ -147,7 +147,7 @@ Used for seller to create a seller portfolio once account is crated.
 }
 ```
 
-### 3.2. Add Shoes - `/portfolio/add_item` (POST)
+### 3.3. Add Shoes - `/portfolio/add_item` (POST)
 Used for seller to create a seller portfolio once account is crated.
 
 **Query Parameters**:
@@ -163,7 +163,22 @@ Used for seller to create a seller portfolio once account is crated.
 }
 ```
 
-### 3.3. Get Portfolio Items - `/portfolio/get_items` (GET)
+### 3.4. Add Photos - `/portfolio/add_photo` (POST)
+Used for seller to add photos to their post
+
+**Query Parameters**:
+
+- `photo`: What the link of the photo will be
+
+**Response**:
+
+```json
+{
+    "Item added"
+}
+```
+
+### 3.5. Get Portfolio Items - `/portfolio/get_items` (GET)
 Used for seller to display current listings
 
 **Query Parameters**:
@@ -177,5 +192,44 @@ Used for seller to display current listings
 }
 ```
 
+## 4. Deleting Posts
 
+The API calls are made in this sequence when deleting:
+1. `Get portfolio`
+2. `Delete listing`
 
+### 4.1. Get portfolio - `/portfolio/{portfolio_id}` (GET)
+
+Retrieves all user listings based on portfolio ID
+
+Query Parameters:
+-`portfolio_id`: Identifier for the seller's portfolio.
+
+**Response**:
+
+```json
+{
+     "listing_id": "integer",
+        "title": "string",
+        "brand": "string",
+        "size": "integer",
+        "price": "integer",
+        "images": ["string"]
+}
+```
+
+### 4.2. Delete Listing - `/portfolio/{portfolio_id}/listing/{listing_id}` (DELETE)
+
+Deletes a specific shoe from a seller's portfolio
+
+Query Parameters:
+-`portfolio_id`: Identifier for the seller's portfolio.
+-`listing_id`: Identifier for the specific listing to be deleted.
+
+```json
+**Response**:
+{
+    "success": "boolean",
+    "message": "Listing deleted successfully"
+}
+```
