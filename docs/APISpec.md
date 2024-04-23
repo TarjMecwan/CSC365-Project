@@ -123,8 +123,6 @@ Used for user to login once account is crated.
     "auth_token": "string"
 }
 ```
-```json
-
 
 ## 3. Posting as Seller
 
