@@ -22,3 +22,9 @@
 1. Admin logs in to obtain a session token.
 2. Admin posts new shoe listings via `POST /listings`.
 3. Admin views all listings to verify new entries via `GET /listings`.
+
+### Example Flow 4: User adds a New Listing
+
+1. User logs in via `POST /auth/login`
+2. User creates a listing via POST /listings
+3. User can view all their listings via `GET /listings/{user_id}`.
