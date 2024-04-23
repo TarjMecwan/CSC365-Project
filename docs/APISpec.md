@@ -119,7 +119,65 @@ Used for user to login once account is crated.
 **Response**:
 
 ```json
-[
+{
     "auth_token": "string"
-]
+}
 ```
+```json
+
+
+## 3. Posting as Seller
+
+The API calls are made in this sequence when making a purchase:
+1. `Make Portfolio`
+2. `Add Shoes`
+3. `Add Item to Cart` (Can be called multiple times)
+4. `Checkout Cart`
+
+### 3.1. Make Portfolio - `/portfolio` (POST)
+Used for seller to create a seller portfolio once account is crated.
+
+**Query Parameters**:
+- `username`: Username used for login.
+
+**Response**:
+
+```json
+{
+
+    "portfolio_id": "int"
+}
+```
+
+### 3.2. Add Shoes - `/portfolio/add_item` (POST)
+Used for seller to create a seller portfolio once account is crated.
+
+**Query Parameters**:
+- `portfolio_id`: ID tied to the user's shoe portfolio.
+- `shoe_id`: ID tied to the shoe that will be added.
+- `quantity`: How many of those shoes will be sold.
+
+**Response**:
+
+```json
+{
+    "Item added"
+}
+```
+
+### 3.3. Get Portfolio Items - `/portfolio/get_items` (POST)
+Used for seller to display current listings
+
+**Query Parameters**:
+- `portfolio_id`: ID tied to the user's shoe portfolio.
+
+**Response**:
+
+```json
+{
+    "shoes" : "listof objects"
+}
+```
+
+
+
