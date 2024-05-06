@@ -4,7 +4,7 @@
 
 ### Due Date
 
-**Submission Deadline:** April 8th, 2023, end-of-day.
+**Submission Deadline:**
 
 ### Project Overview
 
@@ -23,4 +23,5 @@ We are creating an e-commerce platform where users can buy and sell shoes. Users
 
 ### Getting Started
 
-Add stuff later
+run with
+uvicorn main:app --reload  
